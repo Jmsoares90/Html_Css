@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: rgb(252, 185, 103);
+
+        }
+
+        a {
+            color: violet;
+            text-decoration: none;
+        }
+        
+        a:visited {
+            color: rgb(16, 16, 131);
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: rgb(100, 100, 0);
+            text-decoration: underline;
+            font-size: 17px;
+        }
+
+        a:active {
+            color: red;
+            font-size: 18px;
+            background-color: yellow;
+        }
+
+        .futebol:hover {
+            color: black;
+            font-size: 20px;
+        }
+
+        a::after {
+            content: ' (link) ';
+            font-size: 14px;
+            font-weight: lighter;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="http://www.record.pt" target="_blank" class="futebol">Record</a></li>
+        <li><a href="http://www.abola.pt" target="_blank" class="futebol">Abola</a></li>
+        <li><a href="http://www.flashscore.pt" target="_blank">Meus Resultados</a></li>
+    </ul>
+</body>
+</html>
